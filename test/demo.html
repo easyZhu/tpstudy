@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>websocket_connect</title>
+</head>
+<body>
+<script>
+    ws = new WebSocket("ws://127.0.0.1:5656");
+    ws.onmessage = function(e) {
+        alert("收到服务端的消息：" + e.data);
+    };
+</script>
+</body>
+</html>
